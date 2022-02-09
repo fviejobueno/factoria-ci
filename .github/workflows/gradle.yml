@@ -46,4 +46,4 @@ jobs:
         # comma-separated string, send email to
         to: francisco.v@thoughtworks.com
         # from email name
-        from: Factoria CI
+        from: francisco.v@thoughtworks.com
