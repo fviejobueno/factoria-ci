@@ -1,3 +1,4 @@
+![Coverage](.github/badges/jacoco.svg)
 # Factoria CI
 Factoria CI is the demo project to demonstrate the continuous integration pipelines through Github Actions.
 This is a simple application with [Spring Boot](https://spring.io/guides/gs/spring-boot/).
