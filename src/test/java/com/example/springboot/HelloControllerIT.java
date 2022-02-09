@@ -18,6 +18,6 @@ public class HelloControllerIT {
     @Test
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/", String.class);
-        assertThat(response.getBody()).isEqualTo("Welcome to the CI demo session and greetings from Thoughtworks!");
+        assertThat(response.getBody()).isEqualTo("Greetings from Thoughtworks!");
     }
 }
