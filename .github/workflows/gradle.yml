@@ -34,14 +34,11 @@ jobs:
         chmod +x gradlew
         ./gradlew test jacocoTestReport
         
-    - name: Add coverage to PR
-      id: jacoco
-      uses: madrapps/jacoco-report@v1.2
+    - name: Generate JaCoCo Badge
+      uses: cicirello/jacoco-badge-generator@v2
       with:
-        paths: /home/runner/work/factoria-ci/factoria-ci/build/reports/tests/test/index.html
-        token: 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
-        min-coverage-overall: 40
-        min-coverage-changed-files: 60
+        generate-branches-badge: true
+        jacoco-csv-file: build/reports/tests/test/index.html
           
     - name: Send mail
       if: ${{ always() }}
