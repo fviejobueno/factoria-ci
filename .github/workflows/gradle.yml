@@ -39,7 +39,7 @@ jobs:
       uses: madrapps/jacoco-report@v1.2
       with:
         paths: /home/runner/work/factoria-ci/factoria-ci/build/reports/tests/test/index.html
-        token: ${{ secrets.FACTORIA_TOKEN }}
+        token: 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
         min-coverage-overall: 40
         min-coverage-changed-files: 60
           
